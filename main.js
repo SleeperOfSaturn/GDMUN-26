@@ -6,6 +6,8 @@ fetch("header.html")
 
 document.getElementById("header").innerHTML = data;
 
+/* scroll button */
+
 const btn = document.getElementById("scroll-next");
 
 if(btn){
@@ -19,8 +21,28 @@ next.scrollIntoView({ behavior: "smooth" });
 }
 
 });
-
 }
+
+/* hamburger menu */
+
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("nav-links");
+
+if(hamburger && nav){
+hamburger.addEventListener("click", () => {
+nav.classList.toggle("show");
+hamburger.classList.toggle("active");
+});
+}
+
+/* close menu on link click */
+
+document.querySelectorAll("#nav-links a").forEach(link=>{
+link.addEventListener("click", ()=>{
+nav.classList.remove("show");
+hamburger.classList.remove("active");
+});
+});
 
 });
 
