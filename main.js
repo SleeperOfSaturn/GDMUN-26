@@ -47,3 +47,31 @@ hamburger.classList.remove("active");
 });
 
 });
+
+const updateTeamLink = () => {
+    const teamLink = document.getElementById('team-nav-link');
+    if (teamLink) {
+        // Test date set to 2025 so it triggers immediately
+        const launchDate = new Date(2026, 3, 14); 
+        const today = new Date();
+
+        if (today >= launchDate) {
+            teamLink.setAttribute("href", "team.html");
+            console.log("Team link updated to team.html");
+        }
+    }
+};
+
+// This observer watches the document for when your header is injected
+const observer = new MutationObserver((mutations, obs) => {
+    const teamLink = document.getElementById('team-nav-link');
+    if (teamLink) {
+        updateTeamLink();
+        obs.disconnect(); // Stop looking once we've found it and fixed it
+    }
+});
+
+observer.observe(document.body, {
+    childList: true,
+    subtree: true
+});
