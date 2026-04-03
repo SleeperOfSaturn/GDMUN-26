@@ -534,7 +534,7 @@ opacity:0;
 transform:translateY(-6px) rotate(-45deg);
 }
 .form-wrapper{
-max-width:900px;
+max-width:1200px;
 margin:4rem auto;
 padding:1.5rem;
 
@@ -657,7 +657,7 @@ border-color:white;
 }
 /* Container for the team section */
 .bullcrap {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
