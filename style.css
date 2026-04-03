@@ -220,7 +220,7 @@ display:grid;
 grid-template-columns:1fr;
 grid-template-rows:auto 1fr auto;
 
-padding:4vw;
+padding:2rem;
 }
 
 /* navigation */
