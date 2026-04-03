@@ -186,13 +186,12 @@ letter-spacing:-0.04em;
 
 text-align:center;
 
-max-width:900px;
+
 margin:0 auto;
 
 padding:4rem 2rem;
 }
 #horizontal{
-max-width:1200px;
 margin:auto;
 
 display:flex;
@@ -204,7 +203,7 @@ padding:6rem 2rem;
 }
 
 #horizontal p{
-max-width:550px;
+
 line-height:1.6;
 }
 
@@ -214,7 +213,7 @@ line-height:1.6;
 position:relative;
 
 height:100%;
-max-width:1400px;
+
 margin:auto;
 
 display:grid;
@@ -236,7 +235,7 @@ letter-spacing:.15em;
 
 .hero{
 align-self:end;
-max-width:60vw;
+
 }
 
 /* hero title */
@@ -285,7 +284,7 @@ background:rgba(255,255,255,0.15);
 border-color:white;
 }
 .register-container{
-max-width:700px;
+
 margin:4rem auto;
 padding:0 2rem;
 }
@@ -350,8 +349,6 @@ height:1px;
 
 margin:4rem auto;
 
-max-width:900px;
-
 background:linear-gradient(
 to right,
 transparent,
@@ -366,7 +363,7 @@ font-size:12px;
 opacity:.7;
 }
 .footnote {
-    max-width: 1100px;
+    
     /* Margin: Top 6rem, Left/Right Auto, Bottom 3rem (keeps space below the line) */
     margin: 6rem auto 1rem auto;
 
@@ -398,7 +395,7 @@ opacity:0.8;
 }
 
 .contact-container{
-max-width:700px;
+
 margin:4rem auto;
 padding:0 2rem;
 }
