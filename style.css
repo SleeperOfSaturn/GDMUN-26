@@ -714,3 +714,44 @@ hr {
         gap: 1.5rem;
     }
 }
+@media (max-width: 768px) {
+    /* 1. Set the main container to column */
+    #horizontal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* 2. Turn the text wrapper into a flex container to control the button */
+    .about-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 3. Assign Orders */
+    /* Text content stays at the top */
+    .about-text h3, 
+    .about-text p:first-of-type {
+        order: 1;
+    }
+
+    /* The Emblem (Logo) moves to middle */
+    .main-emblem {
+        order: 2;
+        margin: 2rem 0; /* Add spacing above/below logo */
+    }
+
+    /* The paragraph containing the button moves to bottom */
+    .about-text p:last-of-type {
+        order: 3;
+        width: 100%;
+    }
+
+    /* Make the button look better as a standalone element on mobile */
+    .committee-button {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+}
